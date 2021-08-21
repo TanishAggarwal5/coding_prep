@@ -19,7 +19,8 @@ string caesarCipher(string s, int k)    //function for the cipher
 {
     
     //for loop to iterate through the string and shift letters by k
-    for (int i = 0; i < s.size(); ++i){
+    for (int i = 0; i < s.size(); ++i)
+    {
         
         //ascii of a = 97 and ascii of A = 65
         
