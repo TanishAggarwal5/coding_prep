@@ -1,4 +1,4 @@
-## [Tower Breakers] (https://www.hackerrank.com/challenges/tower-breakers-1/problem)
+## [Tower Breakers](https://www.hackerrank.com/challenges/tower-breakers-1/problem)
 
 
 ## Objective
@@ -30,4 +30,4 @@ if only on block then one has no move, 2 wins or if towers are even then also 2 
 <br>
 
 ## References
-* [Conditional Statements in C++] (https://www.w3schools.com/cpp/cpp_conditions.asp)
+* [Conditional Statements in C++](https://www.w3schools.com/cpp/cpp_conditions.asp)
