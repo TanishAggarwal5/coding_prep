@@ -15,9 +15,9 @@ vector<string> split(const string &);
  *  2. INTEGER m
  */
 
-int towerBreakers(int n, int m) {       //tower breaker fucntion to decide winner
+int towerBreakers(int n, int m) {       //tower breaker function to decide winner
 
-    //win variable to check to be assigned value of winner as 1 or 2 which is player number
+    //declaring a integer variable win to store value of player number of winner as integer
     int win;
     
     //starting conditional statements for checking and also both play optimally
@@ -26,7 +26,7 @@ int towerBreakers(int n, int m) {       //tower breaker fucntion to decide winne
     //or if number of towers odd but blocks even, then 1 wins as obvious
     if((n==1 && m!=1) || (n%2!=0 && m%2!=0 && m !=1) || (n%2!=0 && m%2==0))
         win= 1;
-    //if tower height is one ,then  2 will win seeing 1 cannot removing anything  or if towers are even, then  2 wins  
+    //if tower height is one , then 2 will win seeing 1 cannot removing anything or if towers are even , then 2 wins  
     else if(m==1 || n%2==0)
         win =2;
   
