@@ -36,7 +36,7 @@ string caesarCipher(string s, int k)    //function for the cipher
 
         //if lower case , then the remainder with 26 will help in rotation if we reach ascii 122 to go back to 65 for remaining skips
         else if (97 <= s[i] && s[i] <= 122)
-            s[i] = char(((w) % 26) +97);
+            s[i] = char(((w) % 26) + 97);
         
     }
    
