@@ -13,49 +13,9 @@ string rtrim(const string &);
  * The function accepts LONG_INTEGER n as parameter.
  */
 
-long flippingBits( long n) {
-    return (unsigned)~n;
-    
-    // return (UINT_MAX-n);
-//     vector<long> j;
-    
-//     int x;
-//     while (n > 0) {
-//     x = n % 2;
-//     j.push_back(x);
-//       n = n / 2;
-      
-//    }
-//     unsigned count = 0;
-//    reverse(j.begin(), j.end());
-//    for (int i = 0; i<j.size(); i++) {
-//        if (j[i]==1) {
-//            j[i]=0;
-//        }
-//        else {
-//            j[i]=1;
-//        }
-//    }
-   
-// // // //    for (auto &element:j) {
-// // // //        cout<<element;
-// // // //    }
-//    for (int w = 0; w<j.size(); w++) {
-//        if (j[w]==1) {
-//            count = count + 2^(j.size()-w-1);
-//        }
-//    }
-// //    return (uint)~n;
-   
-   
-// // //     unsigned int count = 0;
-// // //    for (int j = 0; j < sizeof(arr) ; j++) {
-// // //        if (arr[j] == 1) {
-// // //            count = count + pow(2,j);
-// // //        }
-// // //    }
-//     return  count;
-//     return 0;
+long flippingBits( long n) {                           //function to flip the bits
+
+    return (unsigned)~n;                               //using bitwise not operator on the number and typecasting to unsigned so that we dont get negetive values
 }
 
 int main()
