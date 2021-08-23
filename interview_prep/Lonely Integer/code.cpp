@@ -13,14 +13,16 @@ vector<string> split(const string &);
  * The function accepts INTEGER_ARRAY a as parameter.
  */
 
-int lonelyinteger(vector<int> a) {
+int lonelyinteger(vector<int> a)                      //function to find the integer which occur only once
+{    
     vector<int> k(100,0);
-    for (int i = 0; i<a.size(); i++) {
-        k[a[i]]++;
+
+    for (int i = 0; i<a.size(); i++) {                // creating a new vector of size of max element present in given vector, and initializing
+        k[a[i]]++;                                    // with 0, and whatever number occurs in main vector , increament the value by 1 at that index in vector we created.
     
     }
-    for (int j = 0; j<k.size(); j++) {
-        if (k[j]==1) {
+    for (int j = 0; j<k.size(); j++) {                // in the end, if the value at a particular index is 1 in the vector we ceated , then it means , number of that index occurred only once in given 
+        if (k[j]==1) {                                // vector and the index itself is the answer for our problem
             return j;
             break;
         }
