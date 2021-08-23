@@ -42,9 +42,6 @@ string caesarCipher(string s, int k)    //function for the cipher
    
     //returning updated string
     return s;
-    
-    
-
 }
 
 int main()
