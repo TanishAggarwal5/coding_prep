@@ -7,17 +7,9 @@ Add `int max_of_four(int a, int b, int c, int d)` here.
 */
 int max_of_four(int a,int b,int c,int d)   //function to compare
 {
-    if(a>b && a>c && a>d)
-        return a;                          //return a if its greater than every other number
-    
-    else if(b>c && b>d)
-        return b;                          //if a not greatest then compare  next number with remaining numbers
-    
-    else if (c>d) 
-        return c;                          //if b not greatest then compare  next number with remaining numbers 
-    
-    else
-        return d;                          //in end if none of first three is greatest than result is d only
+    int x = max(a,max(b,max(c,d)));        //using max function inside another max function to get max of more than 2 numbers and flow of this statement is from right to left 
+
+    return x;                              //returning the maximum number
 }
 
 int main() {                               //main fucntion
