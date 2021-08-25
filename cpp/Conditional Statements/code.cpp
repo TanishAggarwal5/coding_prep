@@ -1,11 +1,7 @@
-#include <bits/stdc++.h> // is basically a header file that includes every standard library.
+#include <bits/stdc++.h>                                                                // is basically a header file that includes every standard library.
 #include <iostream>
 
 using namespace std;
-
-
-
-
 
 int main()
 {
@@ -25,9 +21,6 @@ int main()
         cout<<"Greater than 9";
     }
     
-
-    // Write your code here
-
     return 0;
 }
 
